@@ -26002,9 +26002,9 @@ Source: www.cypressindustries.com</description>
 <label x="189.4078" y="19.7612" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="GPIO7/EPWM4B/SCIRXDA/ECAP2"/>
-<wire x1="424.18" y1="5.08" x2="431.8" y2="5.08" width="0.1524" layer="91"/>
-<label x="431.8" y="5.08" size="1.778" layer="95" xref="yes"/>
+<pinref part="U1" gate="A" pin="GPIO28/SCIRXDA/SDAA/!TZ2"/>
+<wire x1="246.38" y1="-5.08" x2="246.38" y2="-10.16" width="0.1524" layer="91"/>
+<label x="246.38" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
