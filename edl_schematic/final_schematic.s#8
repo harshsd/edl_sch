@@ -23027,7 +23027,6 @@ Source: www.cypressindustries.com</description>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="JP13" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP17" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -23303,6 +23302,7 @@ Source: www.cypressindustries.com</description>
 <part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2"/>
 <part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2"/>
 <part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2"/>
+<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -23561,10 +23561,6 @@ Source: www.cypressindustries.com</description>
 <instance part="JP17" gate="G$1" x="27.94" y="190.5" smashed="yes">
 <attribute name="NAME" x="21.59" y="196.215" size="1.778" layer="95"/>
 <attribute name="VALUE" x="21.59" y="185.42" size="1.778" layer="96"/>
-</instance>
-<instance part="D2" gate="1" x="38.1" y="193.04" smashed="yes">
-<attribute name="NAME" x="40.64" y="193.5226" size="1.778" layer="95"/>
-<attribute name="VALUE" x="40.64" y="190.7286" size="1.778" layer="96"/>
 </instance>
 <instance part="GND31" gate="1" x="68.58" y="165.1" smashed="yes">
 <attribute name="VALUE" x="66.04" y="162.56" size="1.778" layer="96"/>
@@ -24875,6 +24871,10 @@ Source: www.cypressindustries.com</description>
 <instance part="R23" gate="G$1" x="233.68" y="2.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="237.49" y="1.0414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="237.49" y="5.842" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D3" gate="1" x="38.1" y="193.04" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.56" y="192.5574" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="35.56" y="195.3514" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -26358,7 +26358,6 @@ Source: www.cypressindustries.com</description>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="D2" gate="1" pin="C"/>
 <wire x1="40.64" y1="193.04" x2="48.26" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="185.42" x2="48.26" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="A1" pin="VI"/>
@@ -26366,16 +26365,17 @@ Source: www.cypressindustries.com</description>
 <wire x1="48.26" y1="144.78" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
 <junction x="53.34" y="144.78"/>
 <pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="D3" gate="1" pin="A"/>
 </segment>
 </net>
 <net name="VIN-" class="0">
 <segment>
 <pinref part="JP17" gate="G$1" pin="1"/>
-<pinref part="D2" gate="1" pin="A"/>
 <wire x1="25.4" y1="193.04" x2="35.56" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="193.04" x2="12.7" y2="193.04" width="0.1524" layer="91"/>
 <junction x="25.4" y="193.04"/>
 <label x="12.7" y="193.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="D3" gate="1" pin="C"/>
 </segment>
 </net>
 <net name="+12V" class="0">

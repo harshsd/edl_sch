@@ -26001,11 +26001,6 @@ Source: www.cypressindustries.com</description>
 <junction x="187.96" y="20.32"/>
 <label x="189.4078" y="19.7612" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U1" gate="A" pin="GPIO7/EPWM4B/SCIRXDA/ECAP2"/>
-<wire x1="424.18" y1="5.08" x2="431.8" y2="5.08" width="0.1524" layer="91"/>
-<label x="431.8" y="5.08" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="N$4" class="0">
 <segment>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -25182,7 +25182,10 @@ type 0309, grid 2.5 mm</description>
 <attribute name="NAME" x="43.2816" y="68.58" size="1.016" layer="95"/>
 <attribute name="VALUE" x="43.9674" y="62.1792" size="1.016" layer="96"/>
 </instance>
-<instance part="R24" gate="G$1" x="109.22" y="-12.7"/>
+<instance part="R24" gate="G$1" x="109.22" y="-12.7" smashed="yes">
+<attribute name="NAME" x="105.41" y="-11.2014" size="1.778" layer="95"/>
+<attribute name="VALUE" x="105.41" y="-16.002" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
